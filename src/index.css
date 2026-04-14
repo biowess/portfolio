@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans bg-apple-light text-apple-textLight dark:bg-apple-dark dark:text-apple-textDark antialiased;
+  }
+}
+
+@layer components {
+  .pill-btn {
+    @apply rounded-[980px] px-[15px] py-[8px] text-[17px] font-normal transition-colors duration-200;
+  }
+  
+  .pill-btn-primary {
+    @apply bg-hematology text-white hover:bg-hematology-700 active:bg-hematology-800;
+  }
+  
+  .pill-btn-outline {
+    @apply border border-hematology text-hematology dark:border-hematology-400 dark:text-hematology-400 hover:bg-hematology/5 dark:hover:bg-hematology-400/10;
+  }
+  
+  .section-padding {
+    @apply py-24 md:py-32 px-6 md:px-12 lg:px-24;
+  }
+  
+  .hero-heading {
+    @apply text-[40px] md:text-[56px] font-semibold leading-tighter tracking-tight;
+  }
+  
+  .section-heading {
+    @apply text-[32px] md:text-[40px] font-semibold leading-tight tracking-tight;
+  }
+}
