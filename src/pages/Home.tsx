@@ -44,37 +44,56 @@ export function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="section-heading mb-4">Recent Publications</h2>
-            <p className="text-[17px] text-black/60 max-w-2xl mx-auto">
-              Peer-reviewed articles and ongoing studies in clinical hematology.
-            </p>
+            <h2 className="section-heading mb-4">Recent Research Papers</h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {[1, 2].map((item, i) => (
-              <motion.div 
-                key={item}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.6, delay: i * 0.1 }}
-                className="bg-white dark:bg-apple-surfaceDark1 rounded-[12px] p-8 shadow-apple"
-              >
-                <div className="text-[12px] font-semibold text-hematology mb-3 uppercase tracking-wider">
-                  Nature Medicine &bull; 2025
-                </div>
-                <h3 className="text-[21px] font-semibold leading-tight mb-3 dark:text-white">
-                  Novel Approaches to Cellular Therapy in Autoimmune Disorders
-                </h3>
-                <p className="text-[14px] text-black/70 dark:text-white/70 mb-6 line-clamp-3">
-                  This paper explores the efficacy of targeted cellular therapies, demonstrating significant improvements in patient outcomes across multiple clinical trials.
-                </p>
-                <Link to="/research" className="text-[14px] text-hematology hover:underline">
-                  Read full paper <span className="ml-1">&gt;</span>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+  {/* Card 1 */}
+  <motion.div 
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, margin: "-100px" }}
+    transition={{ duration: 0.6, delay: 0.1 }}
+    className="bg-white dark:bg-apple-surfaceDark1 rounded-[12px] p-8 shadow-apple"
+  >
+    <div className="text-[12px] font-semibold text-hematology mb-3 uppercase tracking-wider">
+      Preprint &bull; 2026
+    </div>
+    <h3 className="text-[21px] font-semibold leading-tight mb-3 dark:text-white">
+      Ictère néonatal précoce d'origine hémolytique par incompatibilité ABO
+    </h3>
+    <p className="text-[14px] text-black/70 dark:text-white/70 mb-6 line-clamp-3">
+      Analyse d'un cas clinique d'ictère précoce chez un nouveau-né à terme, explorant la démarche diagnostique face à une hyperbilirubinémie non conjuguée.
+    </p>
+    <Link to="/research/case-1" className="text-[14px] text-hematology hover:underline">
+      Read full paper <span className="ml-1">&gt;</span>
+    </Link>
+  </motion.div>
+
+  {/* Card 2 */}
+  <motion.div 
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, margin: "-100px" }}
+    transition={{ duration: 0.6, delay: 0.2 }}
+    className="bg-white dark:bg-apple-surfaceDark1 rounded-[12px] p-8 shadow-apple"
+  >
+    <div className="text-[12px] font-semibold text-hematology mb-3 uppercase tracking-wider">
+      Preprint, unreleased &bull; 2026
+    </div>
+    <h3 className="text-[21px] font-semibold leading-tight mb-3 dark:text-white">
+      Sepsis néonatal précoce à début respiratoire chez un nouveau-né à terme : à propos d'un cas
+    </h3>
+    <p className="text-[14px] text-black/70 dark:text-white/70 mb-6 line-clamp-3">
+      Le sepsis néonatal précoce demeure une urgence diagnostique et thérapeutique en néonatologie, en raison de sa présentation initialement peu spécifique et du risque d'évolution rapide vers la défaillance multiviscérale. Nous rapportons le cas d'un nouveau-né à terme, admis dans les premières 24 heures de vie pour détresse respiratoire modérée, mauvaise adaptation alimentaire et instabilité thermique.
+    </p>
+    <Link to="/research/case-2" className="text-[14px] text-hematology hover:underline">
+      Read full paper <span className="ml-1">&gt;</span>
+    </Link>
+  </motion.div>
+
+
+</div>
         </div>
       </section>
 
