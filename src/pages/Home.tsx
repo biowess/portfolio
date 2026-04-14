@@ -65,7 +65,7 @@ export function Home() {
     <p className="text-[14px] text-black/70 dark:text-white/70 mb-6 line-clamp-3">
       Analyse d'un cas clinique d'ictère précoce chez un nouveau-né à terme, explorant la démarche diagnostique face à une hyperbilirubinémie non conjuguée.
     </p>
-    <Link to="/research/case-1" className="text-[14px] text-hematology hover:underline">
+    <Link to="/research" className="text-[14px] text-hematology hover:underline">
       Read full paper <span className="ml-1">&gt;</span>
     </Link>
   </motion.div>
@@ -87,7 +87,7 @@ export function Home() {
     <p className="text-[14px] text-black/70 dark:text-white/70 mb-6 line-clamp-3">
       Le sepsis néonatal précoce demeure une urgence diagnostique et thérapeutique en néonatologie, en raison de sa présentation initialement peu spécifique et du risque d'évolution rapide vers la défaillance multiviscérale. Nous rapportons le cas d'un nouveau-né à terme, admis dans les premières 24 heures de vie pour détresse respiratoire modérée, mauvaise adaptation alimentaire et instabilité thermique.
     </p>
-    <Link to="/research/case-2" className="text-[14px] text-hematology hover:underline">
+    <Link to="/research" className="text-[14px] text-hematology hover:underline">
       Read full paper <span className="ml-1">&gt;</span>
     </Link>
   </motion.div>
