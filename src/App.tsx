@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { Layout } from './components/Layout';
 import { Home } from './pages/Home';
@@ -21,7 +21,7 @@ import { ScrollToTop } from './components/ScrollToTop';
 export default function App() {
   return (
     <HelmetProvider>
-      <BrowserRouter basename="/portfolio">
+      <BrowserRouter>
 
         {/* ✅ ADD THIS LINE */}
         <ScrollToTop />
