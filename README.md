@@ -11,8 +11,8 @@
 
 A modern **React + Vite** personal portfolio for **Mohammed W. Hammami**, built to present research, projects, writing, photography, certificates, and professional contact details in a clean, editorial-style interface.
 
-**Live demo:** `https://biowess/github.io/portfolio`
-**Repository:** `https://github.com/biowess/portfolio`
+* **Live demo:** [View Portfolio](https://biowess.github.io/portfolio)  
+* **Repository:** [GitHub Repo](https://github.com/biowess/portfolio)
 
 ## What this portfolio showcases
 
