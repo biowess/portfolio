@@ -21,7 +21,7 @@ import { ScrollToTop } from './components/ScrollToTop';
 export default function App() {
   return (
     <HelmetProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/portfolio">
 
         {/* ✅ ADD THIS LINE */}
         <ScrollToTop />
