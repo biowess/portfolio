@@ -21,7 +21,7 @@ import { ScrollToTop } from './components/ScrollToTop';
 export default function App() {
   return (
     <HelmetProvider>
-      <BrowserRouter>
+      <Router>
 
         {/* ✅ ADD THIS LINE */}
         <ScrollToTop />
@@ -38,7 +38,7 @@ export default function App() {
             <Route path="contact" element={<Contact />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </Router>
     </HelmetProvider>
   );
 }
